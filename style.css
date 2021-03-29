@@ -7,6 +7,9 @@ body {
     visibility: hidden;
 }
 
+.displaySearch div{
+  padding-top:3px
+}
 
 .header h1 {
   font-size: 80px;
@@ -41,4 +44,15 @@ p{
   position: relative;
   left: 10px;
   top: 10px;
+}
+
+footer {
+	position: relative;
+	height: 90px;
+    background-color: #333333;
+}
+
+p.supportBy {
+	position: absolute;
+    color: #fff;
 }
