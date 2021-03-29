@@ -5,6 +5,7 @@ body {
  
 .displaySearch {
     visibility: hidden;
+    
 }
 
 .displaySearch div{
@@ -49,7 +50,7 @@ p{
 footer {
 	position: relative;
 	height: 90px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(56, 97, 101);
 }
 
 p.supportBy {
