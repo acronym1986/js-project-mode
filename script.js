@@ -41,7 +41,7 @@ submitButton.onclick = searchWord;
         let proAudio = data[0].hwi.prs[0].sound.audio;
         let subdirectory = proAudio.charAt(0);
         
-   let srcLink = `https://media.merriam-webster.com/audio/prons/en/us/mp3/${subdirectory}/${proAudio}.mp3`;
+        let srcLink = `https://media.merriam-webster.com/audio/prons/en/us/mp3/${subdirectory}/${proAudio}.mp3`;
        
         //set audio player
         let audio = document.createElement("AUDIO");
