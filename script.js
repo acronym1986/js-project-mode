@@ -41,6 +41,7 @@ submitButton.onclick = searchWord;
         let proAudio = data[0].hwi.prs[0].sound.audio;
         let subdirectory = proAudio.charAt(0);
         
+        //replace the variables in the audio link
         let srcLink = `https://media.merriam-webster.com/audio/prons/en/us/mp3/${subdirectory}/${proAudio}.mp3`;
        
         //set audio player
@@ -48,7 +49,13 @@ submitButton.onclick = searchWord;
             audio.setAttribute("src",srcLink);
             audio.setAttribute("controls", "controls");
             audio.setAttribute("autoplay", "autoplay");
+            //pronounceResult.appendChild(audio);  
+            if (pronounceResult.hasChildNodes()) {
+                //pronounceResult.removeChild(pronounceResult.firstChild);
+                pronounceResult.innerHTML = "";
+            }
             pronounceResult.appendChild(audio);
+             
 
       }) 
        // define error response
